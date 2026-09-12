@@ -36,4 +36,15 @@ function getMultiplierColor(multiplier) {
     --background: #0f172a;
     --panel: #1e293b;
     --text: #ffffff;
+}.red {
+    color: #ff0000;
 }
+
+.green {
+    color: #00cc44;
+}
+
+.pink {
+    color: #ff69b4;
+}
+
