@@ -1,0 +1,8 @@
+@app.route("/")
+def home():
+    return render_template(
+        "index.html",
+        multiplier=12.45,
+        status="cashed_out"
+    )
+  
