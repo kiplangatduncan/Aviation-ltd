@@ -1,0 +1,32 @@
+let plane = document.getElementById("plane");
+let x = 0;
+
+function animate() {
+    x += 3;
+    plane.style.left = x + "px";
+
+    if (x > window.innerWidth) {
+        x = -50;
+    }
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
+
+let x = 0;
+
+function gameLoop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "blue";
+    ctx.fillRect(x, 150, 80, 30);
+
+    x += 2;
+
+    requestAnimationFrame(gameLoop);
+}
+
+gameLoop();
