@@ -178,4 +178,30 @@ document.getElementById("betForm")
 ">
     {{ status }}
 </div>
+  <h1 id="multiplier">1.00x</h1>
+        <script>
+function updateMultiplier(value) {
+    const multiplier = document.getElementById("multiplier");
+
+    multiplier.textContent = value.toFixed(2) + "x";
+
+    multiplier.classList.remove("red", "green", "pink");
+
+    if (value < 2) {
+        multiplier.classList.add("red");
+    } else if (value < 10) {
+        multiplier.classList.add("green");
+    } else {
+        multiplier.classList.add("pink");
+    }
+}
+        </script>
+        <script>
+let value = 1.00;
+
+setInterval(() => {
+    value += 0.05;
+    updateMultiplier(value);
+}, 100);
+        </script>
         
