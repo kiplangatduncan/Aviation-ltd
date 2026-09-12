@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Aviation Ltd</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Multiplier Demo</title>
+    style.css
 </head>
 <body>
-    <h1>Welcome to Aviation Ltd</h1>
-    <p>Site deployed successfully.</p>
+
+    <header>
+        <h1>Flight Multiplier Demo</h1>
+        <div class="balance">
+            Virtual Credits: <span id="balance">1000</span>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="game-area">
+            <div class="multiplier">
+                <h2 id="multiplier">1.00x</h2>
+            </div>
+
+            <div class="flight-container">
+                ✈️
+            </div>
+
+            <div id="status">
+                Waiting for next round...
+            </div>
+        </section>
+
+        <section class="betting-panel">
+
+            <div class="bet-slot">
+                <h3>Slot 1</h3>
+                <input type="number" placeholder="Credits">
+                <button>Play</button>
+                <button>Cash Out</button>
+            </div>
+
+            <div class="bet-slot">
+                <h3>Slot 2</h3>
+                <input type="number" placeholder="Credits">
+                <button>Play</button>
+                <button>Cash Out</button>
+            </div>
+
+            <div class="bet-slot">
+                <h3>Slot 3</h3>
+                <input type="number" placeholder="Credits">
+                <button>Play</button>
+                <button>Cash Out</button>
+            </div>
+
+        </section>
+
+        <section class="history">
+            <h3>Previous Rounds</h3>
+            <ul id="history-list">
+                <li>2.15x</li>
+                <li>5.80x</li>
+                <li>1.32x</li>
+            </ul>
+        </section>
+
+    </main>
+
+    script.jsscript>
+
 </body>
 </html>
-
