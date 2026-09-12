@@ -1,1 +1,6 @@
-
+services:
+  - type: web
+    name: aviation-ltd
+    env: static
+    staticPublishPath: .
+    
