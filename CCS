@@ -1,0 +1,39 @@
+.plane {
+    color: #ff0000; /* Red */
+}
+.multiplier-low {
+    color: #ff0000; /* Red */
+}
+
+.multiplier-mid {
+    color: #00cc44; /* Green */
+}
+
+.multiplier-high {
+    color: #ff69b4; /* Pink */
+}
+function getMultiplierColor(multiplier) {
+    if (multiplier < 2) return "#ff0000";      // Red
+    if (multiplier < 10) return "#00cc44";     // Green
+    return "#ff69b4";                          // Pink
+}
+.bet-placed {
+    background-color: #ffd700; /* Yellow */
+    color: #000;
+}
+
+.cashed-out {
+    background-color: #00cc44; /* Green */
+    color: #fff;
+}
+:root {
+    --plane-red: #ff0000;
+    --low-multiplier: #ff0000;
+    --mid-multiplier: #00cc44;
+    --high-multiplier: #ff69b4;
+    --bet-placed: #ffd700;
+    --cashed-out: #00cc44;
+    --background: #0f172a;
+    --panel: #1e293b;
+    --text: #ffffff;
+}
