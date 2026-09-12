@@ -158,4 +158,24 @@ document.getElementById("betForm")
 
         /registerRegister</a>
 /loginLogin</a>
+<span class="
+{% if multiplier < 2 %}
+    multiplier-low
+{% elif multiplier < 10 %}
+    multiplier-mid
+{% else %}
+    multiplier-high
+{% endif %}
+">
+    {{ multiplier }}x
+</span>
+<div class="
+{% if status == 'placed' %}
+    bet-placed
+{% elif status == 'cashed_out' %}
+    cashed-out
+{% endif %}
+">
+    {{ status }}
+</div>
         
