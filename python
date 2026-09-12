@@ -24,3 +24,6 @@ def home():
 def home():
     return "Game is Live!"
 
+@app.route("/")
+def home():
+    return render_template("index.html")
