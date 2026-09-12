@@ -52,4 +52,9 @@ function getMultiplierColor(multiplier) {
 .pink {
     color: #ff69b4;
 }
+body {
+    background: #222;
+    color: white;
+    text-align: center;
+}
 
