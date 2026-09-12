@@ -82,3 +82,80 @@
 
 </body>
 </html>
+function placeBet() {
+    const stake = document.getElementById("stake").value;
+    const message = document.getElementById("message");
+
+    // Empty input
+    if (stake === "") {
+        message.textContent = "Please enter an amount.";
+        return;
+    }
+
+    // Convert to number
+    const amount = Number(stake);
+
+    // Check valid number
+    if (isNaN(amount)) {
+        message.textContent = "Amount must be a number.";
+        return;
+    }
+
+    // Minimum amount
+    if (amount < 3) {
+        message.textContent = "Minimum amount is 3.";
+        return;
+    }
+
+    // Maximum amount example
+    if (amount > 10000) {
+        message.textContent = "Amount is too large.";
+        return;
+    }
+
+    message.textContent = `Accepted: ${amount}`;
+}
+        message.textContent
+        <form id="betForm">
+    <input type="number" id="stake" min="3" required>
+    <button type="submit">Play</button>
+</form>
+
+<script>
+document.getElementById("betForm")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const amount =
+        Number(document.getElementById("stake").value);
+
+    if (amount < 3) {
+        alert("Minimum amount is 3.");
+        return;
+    }
+
+    alert("Valid amount entered.");
+});
+</script>
+
+        <input
+    type="number"
+    id="stake"
+    min="3"
+    step="1"
+>
+
+        <input
+    type="number"
+    id="stake"
+    placeholder="Enter amount"
+    min="3"
+>
+<button onclick="placeBet()">Play</button>
+
+<p id="message"></p>
+
+        /registerRegister</a>
+/loginLogin</a>
+        
