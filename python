@@ -15,4 +15,12 @@ def home():
 @app.route("/")
 def home():
     return "Game is Live!"
+from flask import render_template
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+@app.route("/")
+def home():
+    return "Game is Live!"
 
