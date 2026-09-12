@@ -1,7 +1,5 @@
 Flask
 Flask-Login
 Flask-SQLAlchemy
-gunicorn_app:app
-@app.route("/login")
-def login():
-    ...
+gunicorn
+
